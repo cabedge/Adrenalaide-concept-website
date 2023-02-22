@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+    scroll-behavior: smooth
+}
+.hidden {
+    display: none;
+}
+
+.header-container {
+    position: relative;
+}
+
+/* Nav Bar */
+.nav-background {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0);
+    height: 98px;
+    width: 100%;
+}
+.nav-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%
+}
+.left-side-nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 324px;
+}
+.left-side-nav-container button {
+    font-size: 1.25rem;
+    letter-spacing: 0.2em;
+    background-color: transparent;
+    border: none;
+}
+.nav-logo img {
+    margin-right: 100px;
+    width: 6.125rem;
+    height: auto;
+}
+.right-side-nav-container {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+.right-side-nav-container button{
+    background-color: transparent;
+    border: none;
+}
+.right-side-nav-container img {
+    width: 2.5rem;
+}
+
+/* Carousel button */
+.carousel-button-container{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 3.5%;
+    width: 100%;
+}
+.carousel-button-background{
+    width: 92.5%;
+    display: flex;
+    justify-content: space-between;
+}
+.carousel-button-background button {
+    background-color: transparent;
+    border-style: none;
+}
+
+.left-button > svg {
+    width: 6vw;
+    height: 6vw;
+}
+.left-button > svg > path {
+    fill:rgba(0, 0, 0, 0.5)
+}
+
+.right-button > svg {
+    width: 6vw;
+    height: 6vw;
+}
+.right-button > svg > path {
+    fill:rgba(0, 0, 0, 0.5)
+}
+
+/* Banner */
+.banner-container{
+    position: relative;
+    height: 812px;
+}
+/* ** Banner 1 ** */
+.banner-img-1 {
+    visibility: visible;
+    position: absolute;
+}
+.banner-img-1 img {
+    width: 100vw;
+}
+.banner-1-text-container {
+    left: 11%;
+    top: 28%;
+    position: absolute;
+    font-size: 3.6vw;
+    letter-spacing: 0.1em;
+    display: grid;
+    place-items: center;
+}
+.banner-1-text-container > p > span {
+    font-size: 5vw;
+    text-decoration: underline;
+}
+.hydration-banner-1 {
+    border: 5px solid black;
+    padding: 0 3.5vw;
+    display: inline-block;
+}
+.banner-1-text-container > button {
+    color: white;
+    background-color: black;
+    margin-top: 15px;
+    padding: 0 2vw;
+    font-size: 3vw;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+/* ** Banner 2 ** */
+.banner-img-2 {
+    position: absolute;
+}
+.banner-img-2 img {
+    width: 100vw;
+}
+/* ** Banner 3 ** */
+.banner-img-3 {
+    position: absolute;
+}
+.banner-img-3 img {
+    width: 100vw;
+}
+/* ** Banner 4 ** */
+.banner-img-4 {
+    position: absolute;
+}
+.banner-img-4 img {
+    width: 100vw;
+}
+/* ** Animation ** */
+.visibility-none {
+    visibility: hidden;
+}
+.move-in-right-to-center {
+animation: move-in-right-to-center 1s ease-in-out ;
+
+}
+  
+  @keyframes move-in-right-to-center {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+.move-in-center-to-left {
+  animation: move-in-center-to-left 1s ease-in-out;
+}
+
+@keyframes move-in-center-to-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* about */
+.about-container {
+    margin: 200px auto;
+    width: 90%;
+}
+.about-container > p {
+    padding: 0 20px;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    font-size: 3rem;
+    color: white;
+    background-color: black;
+}
+.about-container :nth-child(2) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 88%;
+}
+.about-container div p {
+    font-size: 1.75rem;
+    letter-spacing: 0.1em;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.about-img {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 85%;
+}
+.about-img > img{
+    width: 25vw;
+    height: 40vh;
+    object-fit: cover;
+}
+
+/* community */
+.community-container{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    
+}
+.community-container > p {
+    justify-self: center;
+    margin-bottom: 41px;
+    padding: 0 20px;
+    display: inline-block;
+    letter-spacing: 0.25em;
+    font-size: 3rem;
+    color: white;
+    background-color: black;
+}
+.community-grid-display{
+    display: grid;
+    grid-template-rows: 1fr 0.25fr 1fr 0.25fr 1fr;
+    row-gap: 50px;
+}
+.community-grid-display > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.community-grid-display > div > img {
+    width: 40vw;
+    height: 55vh;
+    object-fit: cover;
+}
+.community-grid-display div p {
+    font-size: 1.5rem;
+    display: inline-block;
+}
+.food-pantry-grid {
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    grid-template-rows: 0.1fr 1fr;
+    margin-right: 70px;
+    margin-top: 30px;
+}
+.food-pantry-grid p {
+    letter-spacing: 0.4em;
+}
+.food-pantry-grid img {
+    width: 40vw;
+}
+.sports-grid {
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    grid-template-rows: 0.1fr 1fr;
+    margin-top: 30px;
+}
+.sports-grid p {
+    letter-spacing: 0.4em;
+}
+.sports-grid img {
+    width: 40vw;
+}
+.youth-camp-grid {
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    grid-template-rows: 0.1fr 1fr;
+    margin-right: 70px;
+    margin-top: 30px;
+}
+.youth-camp-grid p {
+    letter-spacing: 0.4em;
+}
+.youth-camp-grid img {
+    width: 40vw;
+}
+.community-grid-display span{
+    align-self: center;
+    background-color: black;
+    height: 4px;
+}
+
+/* Bottom Banner */
+.bottom-banner-container{
+    display: grid;
+    place-items: center;
+    margin: 100px 0;
+    position: relative;
+}
+.bottom-banner-container > img {
+    width: 90%;
+    height: auto;
+}
+.bottom-banner-container > p {
+    top: 5%;
+    left: 8%;
+    position: absolute;
+    font-size: 3.5vw;
+    letter-spacing: 0.1em;
+}
+.bottom-banner-container > button {
+    top: 12.5%;
+    left: 22.5%;
+    position: absolute;
+    font-size: 3vw;
+    letter-spacing: 0.1em;
+    background-color: black;
+    color: white;
+    padding: 0 10px;
+}
+
+/* footer */
+.footer-container{
+    display: grid;
+    place-items: center;
+    background-color: #1F1F1F;
+    height: 450px;
+}
+.footer-inside-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.logo-social-media-container {
+    display: grid;
+    place-items: center;
+}
+.logo-social-media-container > p {
+    color: white;
+    font-size: 1.2vw;
+    letter-spacing: 0.2em;
+}
+.footer-logo svg {
+    width: 15vw;
+    height: 15vw;
+}
+.footer-logo svg g {
+    fill: white;
+}
+.youtube-icon{
+    background-color: transparent;
+    border-style: none;
+}
+.youtube-icon svg {
+    width: 3vw;
+    height: 3vw;
+}
+.youtube-icon svg path {
+    fill: #8F8F8F;
+}
+.twitter-icon {
+    background-color: transparent;
+    border-style: none;
+}
+.twitter-icon svg {
+    width: 3vw;
+    height: 3vw;
+}
+.twitter-icon svg path {
+    fill: #8F8F8F;
+}
+.facebok-icon {
+    background-color: transparent;
+    border-style: none;
+}
+.facebok-icon svg {
+    width: 3vw;
+    height: 3vw;
+}
+.facebok-icon svg path {
+    fill: #8F8F8F;
+}
+.drinks-gears-about-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 65%;
+}
+.drinks-container > p {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
+}
+.drinks-container > p > a {
+    text-decoration: none;
+    color: #7D7D7D;
+    font-size: 1.25rem;
+    letter-spacing: 0.1em;
+}
+.gears-container > p {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
+}
+.gears-container > p > a {
+    text-decoration: none;
+    color: #7D7D7D;
+    font-size: 1.25rem;
+    letter-spacing: 0.1em;
+}
+.about-footer-container > p > a {
+    color: #7D7D7D;
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
+}
+.copyright-footer {
+    color: #7D7D7D;
+    font-size: 1.25rem;
+    letter-spacing: 0.2em;
+}
+
